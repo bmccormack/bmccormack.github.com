@@ -44,11 +44,11 @@ window['_fs_namespace'] = 'FS';
   
  window['_fs_ready'] = function() {
  var sessionUrl = FS.getCurrentSessionURL();
-  _elev.user = {
+  _elev.changeUser({
     traits: {
       fs_url: sessionUrl
     }
-  }
+  });
  };
 </script>    
   </body>
