@@ -45,7 +45,9 @@ window['_fs_namespace'] = 'FS';
  window['_fs_ready'] = function() {
  var sessionUrl = FS.getCurrentSessionURL();
   _elev.user = {
-    fs_url: sessionUrl
+    traits: {
+      fs_url: sessionUrl
+    }
   }
  };
 </script>    
