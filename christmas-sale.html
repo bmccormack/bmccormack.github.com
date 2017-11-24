@@ -10,6 +10,7 @@
     }
   </style>
   <script>
+  (function() {
     function getParameterByName(name, url) {
       if (!url) url = window.location.href;
       name = name.replace(/[\[\]]/g, "\\$&");
@@ -21,7 +22,8 @@
     } 
     document.getElementById("firstName").innerHTML = getParameterByName("firstName")
     document.getElementById("massTime").innerHTML = getParameterByName("massTime")
-    document.getElementById("massWeekday").innerHTML = getParameterByName("massWeekday")    
+    document.getElementById("massWeekday").innerHTML = getParameterByName("massWeekday")   
+  })();     
   </script>
 </head>
 <body>
