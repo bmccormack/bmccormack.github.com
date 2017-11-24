@@ -19,6 +19,9 @@
       if (!results[2]) return '';
       return decodeURIComponent(results[2].replace(/\+/g, " "));
     } 
+    document.getElementById("firstName").innerHTML = getParameterByName("firstName")
+    document.getElementById("massTime").innerHTML = getParameterByName("massTime")
+    document.getElementById("massWeekday").innerHTML = getParameterByName("massWeekday")    
   </script>
 </head>
 <body>
