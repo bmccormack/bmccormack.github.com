@@ -21,7 +21,7 @@
       if (!results[2]) return '';
       return decodeURIComponent(results[2].replace(/\+/g, " "));
     } 
-    window.onLoad = function(){
+    window.onload = function(){
       var firstName = getParameterByName("firstName")
       console.log(firstName)
       document.getElementById("firstName").innerHTML = firstName
