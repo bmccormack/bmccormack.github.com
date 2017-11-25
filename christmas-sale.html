@@ -21,15 +21,17 @@
       if (!results[2]) return '';
       return decodeURIComponent(results[2].replace(/\+/g, " "));
     } 
-    var firstName = getParameterByName("firstName")
-    console.log(firstName)
-    document.getElementById("firstName").innerHTML = firstName
-    var massTime = getParameterByName("massTime")
-    console.log(massTime)    
-    document.getElementById("massTime").innerHTML = massTime
-    var massWeekday = getParameterByName("massWeekday")
-    console.log(massWeekday)
-    document.getElementById("massWeekday").innerHTML = massWeekday
+    window.onLoad = function(){
+      var firstName = getParameterByName("firstName")
+      console.log(firstName)
+      document.getElementById("firstName").innerHTML = firstName
+      var massTime = getParameterByName("massTime")
+      console.log(massTime)    
+      document.getElementById("massTime").innerHTML = massTime
+      var massWeekday = getParameterByName("massWeekday")
+      console.log(massWeekday)
+      document.getElementById("massWeekday").innerHTML = massWeekday
+    }
   })();     
   </script>
 </head>
